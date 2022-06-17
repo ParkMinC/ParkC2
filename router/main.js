@@ -10,9 +10,17 @@ module.exports = function(app) {
         res.render('index.html')
      });
      app.get('/about',function(req,res){
-        res.render('about.html');
+      res.render('about.html');
+  });
+     app.get('/admission',function(req,res){
+        res.render('admission.html');
     });
-     
+    app.get('/contact',function(req,res){
+      res.render('contact.html');
+  });
+  app.get('/why',function(req,res){
+   res.render('why.html');
+});
     app.get('/listall', function (req, res) {
       //res.render('about.html');
       console.log('listall...');
